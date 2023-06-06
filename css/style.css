@@ -37,3 +37,8 @@ p.empty-list{
 .line{
     text-decoration: line-through;
 }
+
+.fa-xmark:hover{
+    color: red;
+    cursor: pointer;
+}
