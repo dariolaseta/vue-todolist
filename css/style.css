@@ -34,6 +34,11 @@ p.empty-list{
     padding: 2rem;
 }
 
+div.new-item{
+    text-align: center;
+    margin: 2rem;
+}
+
 .line{
     text-decoration: line-through;
 }

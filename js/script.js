@@ -24,6 +24,16 @@ createApp({
     methods: {
         removeItem(index){
             this.todoList.splice(index, 1);
+        },
+        addItem(item){
+            if(item != ''){
+                const newItem = {
+                    text: item,
+                    done: false
+                }
+
+                this.todoList.push(newItem);
+            }
         }
     }
 }).mount("#list");

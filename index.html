@@ -32,6 +32,11 @@
                         </ul>
                         <p v-else class="empty-list">La lista della spesa è vuota</p>
                     </div>
+
+                    <div class="new-item">
+                        <input type="text" v-model="newItem" @keyup.enter="addItem(newItem)">
+                        <button @click="addItem(newItem)">Aggiungi alla lista</button>
+                    </div>
             </div>
             </div>
         </main>
