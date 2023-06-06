@@ -22,7 +22,7 @@
                     <div class="todo-list">
                         <ul v-if="todoList.length > 0">
                             <li v-for="(item, index) in todoList">
-                                <p v-if="(item.done) ? 'done' : '' " class="line">{{item.text}} 
+                                <p v-if="(item.done)" class="line">{{item.text}} 
                                     <i class="fa-solid fa-xmark" @click="removeItem(index)"></i>
                                 </p>
                                 <p v-else>{{item.text}} 
