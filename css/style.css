@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1{
     text-align: center;
     margin: 2rem 0;
@@ -16,7 +20,20 @@ div.todo-list{
     background-color: lightblue;
 }
 
-ul {
+ul{
     padding: 2rem;
     font-size: 1.3rem;
+}
+
+ul li{
+    padding: 1rem 0;
+    border-bottom: 2px solid rgb(205, 234, 243);
+}
+
+p.empty-list{
+    padding: 2rem;
+}
+
+.line{
+    text-decoration: line-through;
 }

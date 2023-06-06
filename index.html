@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,15 +15,20 @@
         <script src="https://unpkg.com/vue@3"></script>
 
         <main>
-            <div class="container">
-                <h1>Todo List</h1>
-                <div class="todo-list">
-                    <ul>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                    </ul>
-                </div>
+            <div id="list">
+
+                <div class="container">
+                    <h1>Todo List</h1>
+                    <div class="todo-list">
+                        <ul v-if="todoList.length > 0">
+                            <li v-for="item in todoList">
+                                <p v-if="(item.done) ? 'done' : '' " class="line">{{item.text}}</p>
+                                <p v-else>{{item.text}}</p>
+                            </li>
+                        </ul>
+                        <p v-else class="empty-list">La lista della spesa è vuota</p>
+                    </div>
+            </div>
             </div>
         </main>
 
